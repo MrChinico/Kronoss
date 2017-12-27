@@ -1,6 +1,6 @@
-@font-face {
+﻿@font-face {
     font-family: moti;
-    src: url("./PingFang.ttf");
+    src: url("./");
 }
 /* Public */
 .banner-info h1, .banner-info p,
@@ -422,11 +422,85 @@ form{
         display: none
     }
     .work{
-        height: 360px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 480px;
         background: url('./pic4.jpg');
         background-size: cover;
         padding: 1rem;
         box-sizing: border-box;
+        color: #FFF;
+    }
+    .work div{
+        width: 80%;
+        height: 70%;
+        background: rgba(0, 0, 0, .5);
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 4rem 2rem;
+        box-sizing: border-box;
+    }
+    .work a{
+        padding: .5rem 1rem;
+        background: #07C;
+    }
+    #introduction{
+        height: 100%;
+        padding-top: 6rem; 
+    }
+    .soft-info, .soft-type{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        height: 100%;
+    }
+    .soft-info > h1, .soft-type > h1{
+        padding-top: 4rem; 
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center; 
+    }
+    .soft-info > div{
+        width: 200px;
+        height: 200px;
+        background: #00F;
+    }
+    .soft-type{
+        padding-bottom: 2rem;
+        box-sizing: border-box;
+    }
+    .soft-type > div{
+        width: 27.5%;
+        border: 1px solid #AAA;
+        padding: 1rem;
+        box-sizing: border-box;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .soft-type > div > h1{
+        font-size: 1.25rem;
+        margin-bottom: 1rem; 
+    }
+    .soft-type > div > p{
+        padding: .75rem 0rem;
+        border-bottom: 1px solid #CCC;
+    }
+    .soft-type > div > p > svg{
+        color: #0A5;
+        margin-right: .5rem; 
+    }
+    .soft-type >.community{
+        border-top: .5rem solid #AAA; 
+    }
+    .soft-type >.twicore{
+        border-top: .5rem solid #05A; 
+    }
+    .soft-type >.twicore-puls{
+        border-top: .5rem solid #0A5; 
     }
 
 @media screen and (max-width: 512px) {
@@ -439,11 +513,11 @@ form{
     .header-navigation{
         position: absolute;
         flex-flow: column;
+        background: #000;
         top:100%;
     }
     .header-navigation li{
         padding: .5rem 1rem;
-        background: #000;
         margin: 0;
     }
     #public-banner{
@@ -459,6 +533,9 @@ form{
     .banner-info{
         width: 100%;
         box-sizing: border-box;
+    }
+    .banner-info h1{
+        width: 100%;
     }
     .banner-info div{
         width: 100%;
@@ -574,5 +651,36 @@ form{
     }
     #signup .right input{
         margin-top: .5rem; 
+    }
+    .work div{
+        padding: 2rem;
+    }
+    .work h1{
+        font-size: 1.5em;
+    }
+    .featrues{
+        margin-top: 1rem;
+    }
+    .introduction > h1{
+        margin-bottom:0;
+    }
+    .soft-type{
+        flex-flow: column;
+        padding: 0rem 1rem;
+    }
+    #introduction{
+        height: auto;
+        padding-top: 6rem; 
+    }
+    .soft-info > div{
+        margin-top: 2rem; 
+    }
+    .soft-info > h1, .soft-type > h1{
+        font-size: 1.5rem;
+        padding: 2rem 0rem;
+    }
+    .soft-type > div{
+        width: 100%;
+        margin: 1rem 0rem; 
     }
 }
