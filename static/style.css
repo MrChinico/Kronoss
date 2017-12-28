@@ -1,6 +1,6 @@
-﻿@font-face {
+@font-face {
     font-family: moti;
-    src: url("./");
+    src: url("./.ttf");
 }
 /* Public */
 .banner-info h1, .banner-info p,
@@ -456,18 +456,28 @@ form{
         display: flex;
         justify-content: space-around;
         flex-flow: row wrap;
+    }
+    .soft-type{
         height: 100%;
     }
     .soft-info > h1, .soft-type > h1{
-        padding-top: 4rem; 
+        padding: 4rem 0rem; 
         box-sizing: border-box;
         width: 100%;
         text-align: center; 
     }
     .soft-info > div{
-        width: 200px;
-        height: 200px;
-        background: #00F;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .soft-info > div > div{
+        padding: .5rem 1rem;
+        background: #07C;
+        margin-top: 6rem;
+    }
+    .soft-info svg{
+        font-size: 8rem;
     }
     .soft-type{
         padding-bottom: 2rem;
@@ -492,6 +502,18 @@ form{
     .soft-type > div > p > svg{
         color: #0A5;
         margin-right: .5rem; 
+    }
+    .soft-type > div > div{
+        text-align: center;
+        background: #0A5;
+        padding: .5rem;
+        margin: 0rem 4rem;
+        margin-top: 4rem; 
+        position: relative;
+        bottom: 0;
+    }
+    .soft-type > div > div a{
+        color: #FFF;
     }
     .soft-type >.community{
         border-top: .5rem solid #AAA; 
@@ -675,6 +697,9 @@ form{
     .soft-info > div{
         margin-top: 2rem; 
     }
+    .soft-info{
+        flex-flow: column;
+    }
     .soft-info > h1, .soft-type > h1{
         font-size: 1.5rem;
         padding: 2rem 0rem;
@@ -682,5 +707,14 @@ form{
     .soft-type > div{
         width: 100%;
         margin: 1rem 0rem; 
+    }
+    .soft-info > div > svg{
+        font-size: 6rem;
+    }
+    .soft-info > div > div{
+        margin-top: 2rem;
+    }
+    .soft-type > div > div{
+        margin-top: 2rem;
     }
 }
